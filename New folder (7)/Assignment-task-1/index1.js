@@ -396,6 +396,8 @@ Q = 3
 // }
 
 
+
+
 //While Loop Questions
 
 //Q=1
@@ -446,7 +448,7 @@ Q = 3
 //         num = Math.floor(num / 10);  
 //     }
 
-    
+
 //     if (originalNum === reversedNum) {
 //         return "Palindrome";  
 //     } else {
@@ -625,6 +627,98 @@ Q = 3
 //         console.log("Exit");
 //         break;
 // }
+
+
+
+
+//Event-questions
+
+
+//Q=1
+
+// const click = document.getElementById('clickMe');
+
+
+// click.addEventListener("click", function () {
+//     if (click.innerHTML === "Click Me") {
+        
+//         click.textContent = "Clicked!"
+        
+//     } else {
+       
+//         click.textContent = "Click Me"
+
+//     }
+
+
+// })
+
+
+
+
+
+//Q=2
+
+
+// const myDiv = document.getElementById("myDiv");
+    
+// myDiv.addEventListener("mouseover", () => {
+//     myDiv.style.backgroundColor = "blue";
+//     myDiv.style.color = "white";  
+// });
+
+// myDiv.addEventListener("mouseout", () => {
+//     myDiv.style.backgroundColor = "lightgray";
+//     myDiv.style.color = "black"; 
+// });
+
+
+
+
+
+//Q=3
+
+// const inputField = document.getElementById("myInput");
+// const paragraph = document.getElementById("myParagraph");
+// inputField.addEventListener("input", () => {
+//     paragraph.textContent = inputField.value;
+// });
+
+
+
+
+
+//Q=4
+
+// const clickMeButton = document.getElementById("clickMeButton");
+// const disableButton = document.getElementById("disableButton");
+
+
+// const handleClick = () => {
+//     alert("Button clicked!");
+// };
+
+
+// clickMeButton.addEventListener("click", handleClick);
+
+
+// disableButton.addEventListener("click", () => {
+//     clickMeButton.removeEventListener("click", handleClick);
+//     alert("Click event disabled!");
+// });
+
+
+
+
+
+
+//Q=5
+
+// document.addEventListener("keydown", (event) => {
+//     if (event.key === "Enter") {  // Check if the key pressed is "Enter"
+//         alert("Enter key was pressed!");
+//     }
+// });
 
 
 
