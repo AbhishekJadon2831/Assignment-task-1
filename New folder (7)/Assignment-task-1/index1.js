@@ -641,11 +641,11 @@ Q = 3
 
 // click.addEventListener("click", function () {
 //     if (click.innerHTML === "Click Me") {
-        
+
 //         click.textContent = "Clicked!"
-        
+
 //     } else {
-       
+
 //         click.textContent = "Click Me"
 
 //     }
@@ -661,7 +661,7 @@ Q = 3
 
 
 // const myDiv = document.getElementById("myDiv");
-    
+
 // myDiv.addEventListener("mouseover", () => {
 //     myDiv.style.backgroundColor = "blue";
 //     myDiv.style.color = "white";  
@@ -683,6 +683,9 @@ Q = 3
 // inputField.addEventListener("input", () => {
 //     paragraph.textContent = inputField.value;
 // });
+
+
+
 
 
 
@@ -719,6 +722,192 @@ Q = 3
 //         alert("Enter key was pressed!");
 //     }
 // });
+
+
+
+
+
+
+
+
+//Array Question
+
+//Q=1
+
+// let arr=[1,2,3,4,5];
+// for(let i=arr.length; i>0; i--){
+//     console.log(i);
+
+// }
+
+
+
+
+//Q=2
+
+// let arr=[10,19,15,25,20];
+// let max=arr[0];
+// let min=arr[0];
+// for(let i=0; i<=arr.length; i++){
+//     if(arr[i]>max){
+//         max=arr[i];
+//     }else if(arr[i]<min){
+//         min=arr[i];
+//     }
+// }
+// console.log(max,min);
+
+
+
+//Q=3
+
+// let arr=[1,3,2,4,6,5];
+// let narr=arr.sort((a,b)=>b-a);
+// k=1;
+// console.log("max",narr[k-1]);
+
+// let arr=[1,3,2,4,6,5];
+// let narr=arr.sort((a,b)=>a-b);
+// k=1;
+// console.log("min",narr[k-1]);
+
+
+
+//Q=4
+// let arr4=[1,-2,2,3,-5,4,-6];
+// for (let i = 0; i < arr4.length; i++) {
+//     for (let j = arr4.length; j >i ; j--) {
+//         if(arr4[j]>arr4[j-1]){
+//             [arr4[j],arr4[j-1]]=[arr4[j-1],arr4[j]]
+//         }
+//     }
+// }
+// console.log(arr4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Q=5
+
+// let tamp=[]
+// let arr =[8,4,2,1];
+// let count=0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//         if (arr[i]>arr[j]) {
+//             tamp.push(arr[i],arr[j])
+//             count++;
+//         }
+//     }
+// }
+
+// console.log(count,tamp);
+
+
+
+
+
+
+
+
+
+//Q=6
+
+// let arr=[2,4,6];
+// let s=0;
+// let max=arr[0];
+// for(let i=0; i<arr.length; i++){
+//     s=Math.max(arr[i],s+arr[i]);
+//     max=Math.max(s,max)
+// }
+// console.log(max);
+
+
+
+
+
+
+
+
+
+
+
+//Q=7
+
+let arr=[1,2,3,5,4,6,7];
+let arr1=arr.sort((a,b)=>b-a);
+n=1;
+console.log(arr1[n-1]);
+
+
+//Q=8
+
+// let arr=[1,2,3,4,5,6];
+// let a=arr[0];
+// let b=arr[0];
+// for(let i=0; i<=arr.length; i++){
+//     if(arr[i]<a){
+//         a=arr[i];
+//     }else if(arr[i]>b){
+//         b=arr[i]
+//     }
+// }
+// console.log(a,b);
+
+
+//Q=9
+
+// let str="abcccdffes";
+// let d1={}
+// for(let i=0; i<=str.length-1; i++){
+//     if(d1[str[i]]){
+//         d1[str[i]]+=1
+//     }else{
+//         d1[str[i]]=1
+//     }
+// }
+// console.log(d1);
+
+
+
+
+//Q=10
+
+// let arr=[1,2,3,4,5,6,7];
+// for(let i=0; i<=arr.length-1; i++){
+//     if(arr[i] % 2!==0){
+//         console.log(arr[i]);
+        
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
