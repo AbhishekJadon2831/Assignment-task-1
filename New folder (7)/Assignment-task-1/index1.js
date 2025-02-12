@@ -133,7 +133,7 @@
 
 
 
-Q = 3
+// Q = 3
 
 
 // let a=6;
@@ -270,6 +270,16 @@ Q = 3
 
 
 // }
+
+
+
+// let a = 10;
+// if (true) {
+//     let a = 20;
+//     console.log(a);
+
+// }
+// console.log(a);
 
 
 
@@ -844,10 +854,10 @@ Q = 3
 
 //Q=7
 
-let arr=[1,2,3,5,4,6,7];
-let arr1=arr.sort((a,b)=>b-a);
-n=1;
-console.log(arr1[n-1]);
+// let arr=[1,2,3,5,4,6,7];
+// let arr1=arr.sort((a,b)=>b-a);
+// n=1;
+// console.log(arr1[n-1]);
 
 
 //Q=8
@@ -887,9 +897,223 @@ console.log(arr1[n-1]);
 // for(let i=0; i<=arr.length-1; i++){
 //     if(arr[i] % 2!==0){
 //         console.log(arr[i]);
-        
+
 //     }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const m=(...arr)=>{
+//     let b=arr.map((e)=>e*e);
+//     return b;
+// }
+// console.log(m(1,2,3,4)); 
+
+
+// let arr = ["hello", "world"];
+// let b = arr.map((e) => e.toUpperCase());
+// console.log(b);
+
+
+// let arr4 = [{name: "Alice", age: 25}, {name: "Bob", age: 30}];
+// let arr5 = arr4.map((obj) => obj.name);
+// console.log(arr5);
+
+
+
+// let arr6 = [0, 10, 20, 30, 40];
+// let arr7 = arr6.map((temp) => (temp * 9/5) + 32);
+// console.log(arr7);
+
+
+
+
+
+//higerorder function
+//filter ex
+
+// const even=(arr)=>{
+//     let b=arr.filter((e)=>e%2===0);
+//     return b;
+// }
+// console.log(even([1,2,3,4,5,6]));
+
+
+
+
+// const negtive=(arr)=>{
+//     let b=arr.filter((e)=>e>0);
+//     return b;
+// }
+// console.log(negtive([-3, 4, -1, 6, -7, 9]));
+
+
+
+
+
+
+
+// const filterPrimes = arr => arr.filter(n => {
+//     if (n < 2) return false;
+//     for (let i = 2; i < n; i++) {
+//       if (n % i === 0) return false;
+//     }
+//     return true;
+//   });
+
+
+//   console.log(filterPrimes([1,2,3,4,5,6,7,8,9,10])); 
+
+
+
+
+
+
+// const fruit=(["apple", "banana", "cat", "strawberry"]);
+// const fruit1=fruit.filter((e)=>e.length > 5);
+// console.log(fruit1);
+
+
+
+
+
+// const opj=([{name: "Alice", age: 17}, {name: "Bob", age: 20}]);
+// const opj1=opj.filter((person)=>person.age>= 20);
+// console.log(opj1);
+
+
+
+//map ex
+
+// const m=(arr)=>{
+//     let b=arr.map((e)=>e*2);
+//     return b;
+// }
+// console.log(m([1,2,3]));
+
+
+
+// let arr6 = [0,25,100];
+// let arr7 = arr6.map((temp) => (temp * 9/5) + 32);
+// console.log(arr7);
+
+
+
+// let extractNames=([{name: "Alice", age: 25}, {name: "Bob", age: 30}]);
+// let b=extractNames.map((e)=>e.name);
+// console.log(b);
+
+
+
+
+
+// const hai=(name)=>{
+//     b=name.map((e)=>e[0].toUpperCase() + e.slice(1));
+//     return b;
+// }
+// console.log(hai(["hello","world"]));
+
+
+
+
+// const m=(arr)=>{
+//     let b=arr.map((e)=>e**2);
+//     return b;
+// }
+// console.log(m([2,3,4]));
+
+
+
+
+// forEach ex.
+
+// const fruit=(fruit1)=>{
+//     let b=fruit1.forEach((e)=>console.log(e));
+//     return b;
+
+
+
+// }
+// fruit(["apple", "banana", "cherry"]);
+
+
+
+
+// const sumArray = arr => {
+//     let sum = 0;
+//     arr.forEach(n => sum += n);
+//     return sum;
+// };
+
+
+// console.log(sumArray([1, 2, 3, 4]));
+
+
+// const countEvenNumbers = arr => {
+//     let count = 0;
+//     arr.forEach(n => {
+//         if (n % 2 === 0) count++;
+//     });
+//     return count;
+// };
+
+
+// console.log(countEvenNumbers([1, 2, 3, 4, 6]));
+
+
+
+// const mation = (arr) => {
+//     arr.forEach((str, index) => arr[index] = str + "!");
+//     return arr;
+// };
+
+
+// console.log(mation(["hello", "world"]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
