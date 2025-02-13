@@ -1096,6 +1096,31 @@
 
 
 
+//Function Practice
+
+// function prime(num){
+//     if(num<=1) return false
+//     for(let i=2; i<num; i++){
+//         if(num % i===0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(prime(18));
+
+
+
+
+// function re(str){
+
+//     let a=""
+//     for(let i=str.length-1; i>=0; i--){
+//         a+= str[i];
+//     }
+//     return a
+// }
+// console.log(re("abhishek"));
 
 
 
@@ -1103,53 +1128,40 @@
 
 
 
+// function factorial(n) {
+//     if (n === 0) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);
+//     }
+// }
+
+
+
+// console.log(factorial(4)); 
 
 
 
 
+// function num(arr){
+//     let s=0;
+//     for(let i=0; i<arr.length; i++){
+//         s+=arr[i]
+//     }
+//     return s
+// }
+// console.log(num([1,2,3,4,5]));
 
 
 
+// function Palindrome(str) {
+//     str = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+//     return str === [...str].reverse().join('');
+// }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(Palindrome("madam"));
+// console.log(Palindrome("hello"));
 
 
 
