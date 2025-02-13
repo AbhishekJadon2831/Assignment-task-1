@@ -1168,6 +1168,121 @@
 
 
 
+//Rest and Spread Operators
+
+//q=1
+
+// let arr=[1,2,3];
+// let arr1=[4,5,6];
+// let arr2=[...arr,...arr1];
+// console.log(arr2);
+
+
+
+
+
+
+//q=2
+
+// const person = { name: "Alice", age: 25 };
+
+// let pre={...person,age:30};
+// console.log(pre);
+
+
+
+
+
+//q=3
+
+// function num(...arr) {
+//     let arr1 = arr.reduce((acc, e) => acc + e, 0);
+
+//     return arr1
+// } 
+// console.log(num(5, 10, 15, 20));
+
+
+
+
+
+
+//q=4
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const [first,second,...rest]=numbers
+
+// console.log(first);
+
+
+
+
+
+//q=5
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+
+// const obj3={...obj1,...obj2};
+// console.log(obj3);
+
+
+
+
+//q=6
+
+// const user = { id: 101, name: "John", role: "Admin" };
+// const {role,...remove }=user;
+// console.log(remove);
+
+
+
+
+//q=7
+
+// const numbers = [45, 78, 12, 89, 23];
+// const num=Math.max(...numbers);
+// console.log(num);
+
+
+
+
+//q=8
+
+// function greet(firstName, ...messages) {
+
+//     let n=messages.join(" , ")
+//     console.log(firstName,n);
+    
+    
+// }
+// greet("Alice", "Hello", "Good Morning", "How are you?");
+
+
+
+//q=9
+// let x = "apple"; 
+// let y = "banana";
+// let tamp=x
+// x=y;
+// y=tamp
+
+// console.log(x);
+
+
+
+
+
+
+// const nestedArr = [1, [2, 3], [4, 5, [6, 7]]];                                // q-10
+// console.log([...nestedArr].flat(2));
+
+
+
+
+
+
 
 
 
