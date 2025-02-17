@@ -1252,7 +1252,7 @@
 
 // function greet(firstName, ...messages) {
 
-//     let n=messages.join(" , ")
+//     let n=messages.join(" , ")c
 //     console.log(firstName,n);
     
     
@@ -1273,9 +1273,9 @@
 
 
 
+ // q-10
 
-
-// const nestedArr = [1, [2, 3], [4, 5, [6, 7]]];                                // q-10
+// const nestedArr = [1, [2, 3], [4, 5, [6, 7]]];                               
 // console.log([...nestedArr].flat(2));
 
 
@@ -1289,7 +1289,92 @@
 
 
 
+//15-02-2025
 
+
+
+//Q=1
+
+// let arr = [[3, 5, 1], [12, 7, 9], [14, 10, 4]];
+// let arr1=arr.flat();
+// let k=3
+// let arr2=arr.sort((a,b)=>b-a);
+// console.log(arr2[k-1]);
+
+
+
+
+
+
+//Q=2
+
+// let arr=[1,2,4,5,6];
+// let n=6;
+// let sum=(n*(n+1))/2
+// let m=arr.reduce((e,acc)=>e+acc,0);
+// let re=sum-m
+// console.log(re);
+
+
+
+
+
+
+
+//Q=3
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr3=[...arr1,...arr2];
+// console.log(arr3);
+
+
+
+
+
+
+//Q=4
+
+// const str = "JavaScript is great and JavaScript is fun!";
+// let newstr = str.split(" ");
+// let obj={}
+
+// function words(newstr) {
+//     for (let i = 0; i < newstr.length; i++) {
+//         if (obj[newstr[i]]) {
+//            console.log(newstr[i])
+//            break;
+//         }else{
+//             obj[newstr[i]]=1
+//         }
+        
+//         }
+
+// }
+
+// words(newstr)
+
+
+
+
+
+
+
+//Q=5
+
+// const arr = [2, 7, 11, 15];
+
+// function sum(arr,tar) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i; j < arr.length; j++) {
+//             if (arr[i]+arr[j]==tar) {
+//                 console.log([i,j]);   
+//             }
+//         }
+//     }
+// }
+
+// sum(arr,9)
 
 
 
