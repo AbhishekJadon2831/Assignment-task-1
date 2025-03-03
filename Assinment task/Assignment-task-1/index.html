@@ -43,8 +43,8 @@
 
     <!-- Q=3 -->
 
-    <input type="text" id="myInput" placeholder="Type something..." />
-    <p id="myParagraph">Whatever you type will appear here!</p>
+    <!-- <input type="text" id="myInput" placeholder="Type something..." />
+    <p id="myParagraph">Whatever you type will appear here!</p> -->
 
 
 
@@ -56,8 +56,170 @@
 
 
 
-
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enhanced To-Do List</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+                background-color: #f0f4f8;
+            }
+    
+            .task-item {
+                transition: all 0.2s ease-in-out;
+            }
+    
+            .task-item:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            .btn {
+                background-color: #3b82f6; /* blue */
+                color: white;
+                border-radius: 12px;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: bold;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+            }
+    
+            .btn:hover {
+                background-color: #2563eb; /* darker blue */
+                transform: translateY(-2px);
+                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            }
+    
+            .greeting {
+                font-size: 24px;
+                font-weight: bold;
+                color: #4b5563; /* gray */
+            }
+        </style>
+    </head>
+    <body class="flex items-center justify-center h-screen w-screen">
+        <div class="bg-white p-10 rounded-2xl shadow-2xl w-full max-w-4xl">
+            <!-- Time-based greeting -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 id="greeting" class="greeting"></h1>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">To-Do List</h2>
+                </div>
+            </div>
+    
+            <!-- Control buttons at the top -->
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <button onclick="showCompletedTasks()" class="btn">Show Completed Tasks</button>
+                <button onclick="showPendingTasks()" class="btn">Show Pending Tasks</button>
+                <button onclick="clearAllTasks()" class="btn bg-red-500 hover:bg-red-600">Clear All</button>
+            </div>
+    
+            <!-- Task input and Add button -->
+            <div class="flex mb-6">
+                <input type="text" id="taskInput" class="border border-gray-300 rounded-lg p-4 w-full mr-4 text-lg" placeholder="Add a new task...">
+                <button onclick="addTask()" class="btn bg-green-600 hover:bg-green-700">Add Task</button>
+            </div>
+    
+            <!-- Task List -->
+            <ul id="taskList" class="list-none p-0"></ul>
+        </div>
+    
+        <script>
+            // Function to show time-based greeting
+            function showGreeting() {
+                const greetingElement = document.getElementById("greeting");
+                const now = new Date();
+                const hour = now.getHours();
+    
+                if (hour < 12) {
+                    greetingElement.textContent = "Good Morning!";
+                } else if (hour < 18) {
+                    greetingElement.textContent = "Good Afternoon!";
+                } else {
+                    greetingElement.textContent = "Good Evening!";
+                }
+            }
+    
+            showGreeting(); // Call this function when the page loads
+    
+            function addTask() {
+                const taskInput = document.getElementById("taskInput");
+                const taskText = taskInput.value.trim();
+    
+                if (taskText !== "") {
+                    const taskList = document.getElementById("taskList");
+                    const li = document.createElement("li");
+    
+                    li.classList.add("bg-gray-50", "p-4", "rounded-lg", "flex", "justify-between", "items-center", "mb-3", "task-item", "shadow-md");
+                    li.innerHTML = `
+                        <span class="task-text font-semibold text-gray-700 text-lg">${taskText}</span>
+                        <div class="flex space-x-3">
+                            <button class="btn bg-yellow-500 hover:bg-yellow-600 text-sm font-medium status-btn" onclick="toggleStatus(this)">Pending</button>
+                            <button class="btn bg-red-500 hover:bg-red-600 text-sm font-medium" onclick="deleteTask(this)">Delete</button>
+                        </div>
+                    `;
+                    
+                    taskList.appendChild(li);
+                    taskInput.value = ""; // Clear the input field after adding the task
+                } else {
+                    alert("Please enter a task!");
+                }
+            }
+    
+            function deleteTask(button) {
+                const li = button.parentElement.parentElement;
+                li.remove();
+            }
+    
+            function toggleStatus(button) {
+                if (button.innerText === "Pending") {
+                    button.innerText = "Completed";
+                    button.classList.remove("bg-yellow-500", "hover:bg-yellow-600");
+                    button.classList.add("bg-green-500", "hover:bg-green-600");
+                } else {
+                    button.innerText = "Pending";
+                    button.classList.remove("bg-green-500", "hover:bg-green-600");
+                    button.classList.add("bg-yellow-500", "hover:bg-yellow-600");
+                }
+            }
+    
+            function showCompletedTasks() {
+                const tasks = document.querySelectorAll(".task-item");
+                tasks.forEach(task => {
+                    const statusButton = task.querySelector(".status-btn");
+                    if (statusButton.innerText === "Completed") {
+                        task.style.display = "flex"; // Show completed tasks
+                    } else {
+                        task.style.display = "none"; // Hide pending tasks
+                    }
+                });
+            }
+    
+            function showPendingTasks() {
+                const tasks = document.querySelectorAll(".task-item");
+                tasks.forEach(task => {
+                    const statusButton = task.querySelector(".status-btn");
+                    if (statusButton.innerText === "Pending") {
+                        task.style.display = "flex"; // Show pending tasks
+                    } else {
+                        task.style.display = "none"; // Hide completed tasks
+                    }
+                });
+            }
+    
+            function clearAllTasks() {
+                const taskList = document.getElementById("taskList");
+                taskList.innerHTML = ""; // Clear all tasks from the list
+            }
+        </script>
+    </body>
+    </html>
+    
+    
 
 
     <script src="index1.js"></script>
