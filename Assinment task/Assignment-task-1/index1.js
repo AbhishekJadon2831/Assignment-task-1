@@ -2006,45 +2006,6 @@
 
 
 
-// class node {
-//     constructor(data) {                                     // Q-3
-//         this.data = data
-//         this.next = null
-//     }
-// }
-
-// let a = new node(1)
-// let b = new node(2)
-// let c = new node(3)
-// let d = new node(4)
-// let temp = new node(10)
-
-// a.next = b
-// b.next = c
-// c.next = d
-
-// let n = 3
-
-// let head = a
-// let current = head
-
-
-
-// while (current !== null && current.data !== n) {
-
-//     console.log(current.data);
-//     current = current.next
-
-// }
-// temp.next = current
-// current = temp
-
-
-// while (current !== null) {
-//     console.log(current.data);
-//     current = current.next
-// }
-
 
 
 
@@ -2076,6 +2037,7 @@
 
 //     if (current!==null) {
 //         current=current.next
+
 //     }
 
 //     while (current !==null) {
@@ -2099,7 +2061,7 @@
 // let b = new node(2)
 // let c = new node(3)
 // let d = new node(4)
-// let temp = new node(10)
+// // let temp = new node(10)
 
 // a.next = b
 // b.next = c
@@ -2132,42 +2094,42 @@
 
 
 
-// class node{
-//     constructor(data){                            // Q-6
-//         this.data=data
-//         this.next=null
+// class node {
+//     constructor(data) {                            // Q-6
+//         this.data = data
+//         this.next = null
 //     }
-//     }
+// }
 
-//     let a=new node(1)
-//     let b=new node(2)
-//     let c=new node(3)
-//     let d=new node(4)
-//     let temp=new node(10)
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let d = new node(4)
+// // let temp=new node(10)
 
-//     a.next=b
-//     b.next=c
-//     c.next=d
-//     let n=2
-//     let head=a
-//     let current= head
-
-
+// a.next = b
+// b.next = c
+// c.next = d
+// let n = 2
+// let head = a
+// let current = head
 
 
 
-//  while (current.next.next!==null && current.data!==n ) {
+
+
+// while (current.next.next !== null && current.data !== n) {
 //     console.log(current.data);
-//     current=current.next
+//     current = current.next
 
-//  }
+// }
 
-//  current=current.next
+// current = current.next
 
-//     while (current !==null) {
-//         console.log(current.data);
-//         current=current.next
-//     }
+// while (current !== null) {
+//     console.log(current.data);
+//     current = current.next
+// }
 
 
 
@@ -2207,85 +2169,128 @@
 
 
 
-// class node{
-//     constructor(data){                                              // Q-8
-//         this.data=data
-//         this.next=null
+// class node {
+//     constructor(data) { 
+//         this.data = data
+//         this.next = null
 //     }
-//     }
+// }
 
-//     let a=new node(1)
-//     let b=new node(2)
-//     let c=new node(3)
-//     let d=new node(4)
-//     let temp=new node(10)
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let d = new node(4)
+// let temp = new node(10)
 
-//     a.next=b
-//     b.next=c
-//     c.next=d
+// a.next = b
+// b.next = c
+// c.next = d
 
-//     let head=a
-//     let current= head
+// let head = a
+// let current = head
 
-//     function search(current,value) {
-//         let position=0
-//         while (current!==null) {
-//             if (current.data==value) {
-//                 console.log("value=",value,"position=",position);
+// function search(current, value) {
+//     let position = 0
+//     while (current !== null) {
+//         if (current.data == value) {
+//             console.log("value=", value, "position=", position);
 
-//             }
-//             current=current.next
-//             position++
 //         }
+//         current = current.next
+//         position++
 //     }
+// }
 
-//     search(current,2)
-
-
-
+// search(current, 2)
 
 
-// class node{
-//     constructor(data){                      // Q-10
-//         this.data=data
-//         this.next=null
+
+
+
+// class node {
+//     constructor(data) {                      // Q-10
+//         this.data = data
+//         this.next = null
 //     }
-//     }
+// }
 
-//     let a=new node(1)
-//     let b=new node(2)
-//     let c=new node(3)
-//     let d=new node(4)
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let d = new node(4)
 
-//     a.next=b
-//     b.next=c
-//     c.next=d
+// a.next = b
+// b.next = c
+// c.next = d
 
-//     let head=a
-//     let current= head
+// let head = a
+// let current = head
 
 
-//     function revrselist(current) {
+// function revrselist(current) {
 
-//     let arr=[]
+//     let arr = []
 
-//     while (current !==null) {
+//     while (current !== null) {
 //         arr.push(current.data)
-//         current=current.next
+//         current = current.next
 //     }
 
-// while (arr.length>0) {
-//     console.log(arr.pop());
+//     while (arr.length > 0) {
+//         console.log(arr.pop());
+
+//     }
 
 // }
 
+// revrselist(current)
+
+
+
+
+
+
+
+//Assignment: Mastering Linked Lists
+
+
+// class node {
+//     constructor(data) {                      // Q-10
+//         this.data = data
+//         this.next = null
+//     }
+// }
+
+// let a = new node(1)
+// let b = new node(2)
+// let c = new node(3)
+// let d = new node(4)
+
+// a.next = b
+// b.next = c
+// c.next = d
+
+// let head = a
+// let current = head
+
+
+// function revrselist(current) {
+
+//     let arr = []
+
+//     while (current !== null) {
+//         arr.push(current.data)
+//         current = current.next
 //     }
 
-//     revrselist(current)
+//     while (arr.length > 0) {
+//         console.log(arr.pop());
 
+//     }
 
+// }
 
-
+// revrselist(current)
 
 
 
